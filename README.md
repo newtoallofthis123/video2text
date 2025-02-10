@@ -7,6 +7,8 @@ Whisper supported model to transcribe the audio to text.
 You can customize your which model to use by changing the `model` variable for `WhisperTranscribe()`
 in the `api/audio.py` file.
 
+![Example](assets/example.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
