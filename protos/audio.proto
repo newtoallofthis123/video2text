@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package api;
+
+message TranscriptionRequest {
+    string url = 1;
+}
+
+message TranscriptionResponse {
+    string status = 1;
+    string message = 2;
+}
+
+service TranscriptionService {
+    rpc TranscribeAudio(TranscriptionRequest) returns (stream TranscriptionResponse);
+}
